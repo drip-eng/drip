@@ -2,6 +2,8 @@
 
 * Above all, split the app into microservices.  Web delivery/core-app, ingress, analytics, and databases should all be separate and independently scalable.
 
+* Setup development workflow with some sort of conditional or a separate dockerfile so that we can run it locally without SSL certs
+
 * Build for fault tolerance.  We will have to decide if this is a simple matter of elastic IP/georeplication, or if we need to start talking SQS.
 
 * Move to RDS, providing easy scalability and automated management and replication.
